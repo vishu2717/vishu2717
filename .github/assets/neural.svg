@@ -1,0 +1,487 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 360" width="100%" height="360">
+  <defs>
+    <!-- Radial aura around center core -->
+    <radialGradient id="deepAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3a0ca3" stop-opacity="0.6"/>
+      <stop offset="35%" stop-color="#4361ee" stop-opacity="0.3"/>
+      <stop offset="70%" stop-color="#00d4ff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <style>
+      @keyframes spark {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -200; }
+      }
+      .pulse-spark {
+        animation: spark 3.5s linear infinite;
+      }
+      @keyframes coreGlowAnim {
+        0%, 100% { transform: scale(1); opacity: 0.75; }
+        50% { transform: scale(1.15); opacity: 0.95; }
+      }
+      .core-glow {
+        transform-origin: 425px 180px;
+        animation: coreGlowAnim 3.5s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- PURE INFINITE BLACK SPACE -->
+  <rect width="100%" height="100%" fill="#000000" rx="10"/>
+
+  <!-- Background Stars -->
+  <circle cx="425.0" cy="345.6" r="1.2" fill="#48cae4" opacity="0.15"/><circle cx="758.4" cy="61.8" r="0.65" fill="#ffffff" opacity="0.25"/><circle cx="40.7" cy="183.1" r="0.65" fill="#ffffff" opacity="0.35"/><circle cx="534.5" cy="293.8" r="0.65" fill="#48cae4" opacity="0.45"/><circle cx="683.1" cy="14.5" r="1.2" fill="#ffffff" opacity="0.55"/><circle cx="18.0" cy="302.4" r="0.65" fill="#9d4edd" opacity="0.65"/><circle cx="636.0" cy="170.8" r="0.65" fill="#48cae4" opacity="0.75"/><circle cx="588.8" cy="70.8" r="0.65" fill="#ffffff" opacity="0.15"/><circle cx="25.2" cy="345.1" r="1.2" fill="#ffffff" opacity="0.25"/><circle cx="721.9" cy="53.5" r="0.65" fill="#48cae4" opacity="0.35"/><circle cx="482.6" cy="195.4" r="0.65" fill="#9d4edd" opacity="0.45"/><circle cx="61.7" cy="284.5" r="0.65" fill="#ffffff" opacity="0.55"/><circle cx="786.1" cy="15.4" r="1.2" fill="#48cae4" opacity="0.65"/><circle cx="372.0" cy="310.3" r="0.65" fill="#ffffff" opacity="0.75"/><circle cx="124.9" cy="158.5" r="0.65" fill="#ffffff" opacity="0.15"/><circle cx="823.8" cy="80.3" r="0.65" fill="#48cae4" opacity="0.25"/><circle cx="265.4" cy="343.8" r="1.2" fill="#ffffff" opacity="0.35"/><circle cx="210.1" cy="45.9" r="0.65" fill="#ffffff" opacity="0.45"/><circle cx="832.3" cy="207.6" r="0.65" fill="#48cae4" opacity="0.55"/><circle cx="170.5" cy="274.7" r="0.65" fill="#ffffff" opacity="0.65"/><circle cx="311.0" cy="17.2" r="1.2" fill="#9d4edd" opacity="0.75"/><circle cx="810.8" cy="317.6" r="0.65" fill="#48cae4" opacity="0.15"/><circle cx="94.3" cy="146.4" r="0.65" fill="#ffffff" opacity="0.25"/><circle cx="420.4" cy="90.4" r="0.65" fill="#ffffff" opacity="0.35"/><circle cx="761.1" cy="341.5" r="1.2" fill="#48cae4" opacity="0.45"/><circle cx="42.3" cy="39.1" r="0.65" fill="#9d4edd" opacity="0.55"/><circle cx="530.0" cy="219.6" r="0.65" fill="#ffffff" opacity="0.65"/><circle cx="686.7" cy="264.4" r="0.65" fill="#48cae4" opacity="0.75"/><circle cx="18.4" cy="20.0" r="1.2" fill="#ffffff" opacity="0.15"/><circle cx="632.0" cy="324.0" r="0.65" fill="#ffffff" opacity="0.25"/><circle cx="593.1" cy="134.5" r="0.65" fill="#48cae4" opacity="0.35"/><circle cx="24.3" cy="101.0" r="0.65" fill="#ffffff" opacity="0.45"/><circle cx="718.7" cy="338.3" r="1.2" fill="#ffffff" opacity="0.55"/><circle cx="487.1" cy="33.0" r="0.65" fill="#48cae4" opacity="0.65"/><circle cx="59.6" cy="231.4" r="0.65" fill="#ffffff" opacity="0.75"/><circle cx="784.0" cy="253.6" r="0.65" fill="#9d4edd" opacity="0.15"/><circle cx="376.6" cy="23.6" r="1.2" fill="#48cae4" opacity="0.25"/><circle cx="121.8" cy="329.7" r="0.65" fill="#ffffff" opacity="0.35"/><circle cx="822.8" cy="122.8" r="0.65" fill="#ffffff" opacity="0.45"/><circle cx="269.7" cy="112.0" r="0.65" fill="#48cae4" opacity="0.55"/><circle cx="206.2" cy="334.3" r="1.2" fill="#9d4edd" opacity="0.65"/><circle cx="832.5" cy="27.8" r="0.65" fill="#ffffff" opacity="0.75"/><circle cx="174.1" cy="243.0" r="0.65" fill="#48cae4" opacity="0.15"/><circle cx="306.6" cy="242.3" r="0.65" fill="#ffffff" opacity="0.25"/><circle cx="812.3" cy="28.0" r="1.2" fill="#ffffff" opacity="0.35"/><circle cx="97.0" cy="334.5" r="0.65" fill="#48cae4" opacity="0.45"/><circle cx="415.7" cy="111.4" r="0.65" fill="#ffffff" opacity="0.55"/><circle cx="763.7" cy="123.4" r="0.65" fill="#ffffff" opacity="0.65"/><circle cx="43.9" cy="329.4" r="1.2" fill="#48cae4" opacity="0.75"/><circle cx="525.5" cy="23.4" r="0.65" fill="#ffffff" opacity="0.15"/><circle cx="690.2" cy="254.2" r="0.65" fill="#9d4edd" opacity="0.25"/><circle cx="18.8" cy="230.8" r="0.65" fill="#48cae4" opacity="0.35"/><circle cx="628.0" cy="33.3" r="1.2" fill="#ffffff" opacity="0.45"/><circle cx="597.3" cy="338.5" r="0.65" fill="#ffffff" opacity="0.55"/><circle cx="23.5" cy="100.4" r="0.65" fill="#48cae4" opacity="0.65"/><circle cx="715.5" cy="135.1" r="0.65" fill="#9d4edd" opacity="0.75"/><circle cx="491.7" cy="323.7" r="1.2" fill="#ffffff" opacity="0.15"/><circle cx="57.6" cy="19.8" r="0.65" fill="#48cae4" opacity="0.25"/><circle cx="781.7" cy="265.0" r="0.65" fill="#ffffff" opacity="0.35"/><circle cx="381.3" cy="218.9" r="0.65" fill="#ffffff" opacity="0.45"/><circle cx="118.7" cy="39.5" r="1.2" fill="#48cae4" opacity="0.55"/><circle cx="821.8" cy="341.7" r="0.65" fill="#ffffff" opacity="0.65"/><circle cx="274.0" cy="89.8" r="0.65" fill="#ffffff" opacity="0.75"/><circle cx="202.3" cy="147.1" r="0.65" fill="#48cae4" opacity="0.15"/><circle cx="832.7" cy="317.2" r="1.2" fill="#ffffff" opacity="0.25"/><circle cx="177.8" cy="17.1" r="0.65" fill="#9d4edd" opacity="0.35"/><circle cx="302.2" cy="275.3" r="0.65" fill="#48cae4" opacity="0.45"/><circle cx="813.8" cy="206.9" r="0.65" fill="#ffffff" opacity="0.55"/><circle cx="99.8" cy="46.3" r="1.2" fill="#ffffff" opacity="0.65"/><circle cx="411.1" cy="343.9" r="0.65" fill="#48cae4" opacity="0.75"/><circle cx="766.3" cy="79.8" r="0.65" fill="#9d4edd" opacity="0.15"/><circle cx="45.6" cy="159.2" r="0.65" fill="#ffffff" opacity="0.25"/><circle cx="521.0" cy="309.9" r="1.2" fill="#48cae4" opacity="0.35"/><circle cx="693.7" cy="15.4" r="0.65" fill="#ffffff" opacity="0.45"/><circle cx="19.2" cy="285.1" r="0.65" fill="#ffffff" opacity="0.55"/><circle cx="623.9" cy="194.7" r="0.65" fill="#48cae4" opacity="0.65"/><circle cx="601.5" cy="54.0" r="1.2" fill="#ffffff" opacity="0.75"/><circle cx="22.7" cy="345.2" r="0.65" fill="#ffffff" opacity="0.15"/><circle cx="712.2" cy="70.3" r="0.65" fill="#48cae4" opacity="0.25"/><circle cx="496.3" cy="171.5" r="0.65" fill="#ffffff" opacity="0.35"/><circle cx="55.6" cy="302.0" r="1.2" fill="#9d4edd" opacity="0.45"/><circle cx="779.5" cy="14.5" r="0.65" fill="#48cae4" opacity="0.55"/><circle cx="385.9" cy="294.3" r="0.65" fill="#ffffff" opacity="0.65"/><circle cx="115.7" cy="182.4" r="0.65" fill="#ffffff" opacity="0.75"/><circle cx="820.7" cy="62.3" r="1.2" fill="#48cae4" opacity="0.15"/><circle cx="278.3" cy="345.6" r="0.65" fill="#9d4edd" opacity="0.25"/><circle cx="198.4" cy="61.3" r="0.65" fill="#ffffff" opacity="0.35"/><circle cx="832.9" cy="183.8" r="0.65" fill="#48cae4" opacity="0.45"/><circle cx="181.5" cy="293.3" r="1.2" fill="#ffffff" opacity="0.55"/><circle cx="297.8" cy="14.5" r="0.65" fill="#ffffff" opacity="0.65"/><circle cx="815.1" cy="302.9" r="0.65" fill="#48cae4" opacity="0.75"/><circle cx="102.6" cy="170.1" r="0.65" fill="#ffffff" opacity="0.15"/><circle cx="406.5" cy="71.3" r="1.2" fill="#ffffff" opacity="0.25"/><circle cx="768.8" cy="345.1" r="0.65" fill="#48cae4" opacity="0.35"/><circle cx="47.3" cy="53.1" r="0.65" fill="#ffffff" opacity="0.45"/><circle cx="516.5" cy="196.0" r="0.65" fill="#9d4edd" opacity="0.55"/><circle cx="697.2" cy="284.0" r="1.2" fill="#48cae4" opacity="0.65"/><circle cx="19.8" cy="15.5" r="0.65" fill="#ffffff" opacity="0.75"/><circle cx="619.9" cy="310.8" r="0.65" fill="#ffffff" opacity="0.15"/><circle cx="605.7" cy="157.9" r="0.65" fill="#48cae4" opacity="0.25"/><circle cx="21.9" cy="80.8" r="1.2" fill="#9d4edd" opacity="0.35"/><circle cx="708.9" cy="343.7" r="0.65" fill="#ffffff" opacity="0.45"/><circle cx="500.8" cy="45.6" r="0.65" fill="#48cae4" opacity="0.55"/><circle cx="53.7" cy="208.2" r="0.65" fill="#ffffff" opacity="0.65"/><circle cx="777.1" cy="274.2" r="1.2" fill="#ffffff" opacity="0.75"/><circle cx="390.5" cy="17.4" r="0.65" fill="#48cae4" opacity="0.15"/><circle cx="112.6" cy="317.9" r="0.65" fill="#ffffff" opacity="0.25"/><circle cx="819.5" cy="145.7" r="0.65" fill="#ffffff" opacity="0.35"/><circle cx="282.6" cy="91.0" r="1.2" fill="#48cae4" opacity="0.45"/><circle cx="194.6" cy="341.4" r="0.65" fill="#ffffff" opacity="0.55"/>
+
+  <!-- Core Dark Aura -->
+  <circle cx="425" cy="180" r="90" fill="url(#deepAura)" class="core-glow"/>
+
+  <!-- Synaptic Web Filaments -->
+  
+      <!-- Primary Synaptic Fiber -->
+      <path d="M 425 180 Q 425 131 425 42" fill="none" stroke="#0055ff" stroke-width="2.2" opacity="0.35"/>
+      <path d="M 425 180 Q 425 131 425 42" fill="none" stroke="#00d4ff" stroke-width="1.1" opacity="0.75"/>
+      
+      <!-- Secondary branching neural filament -->
+      <path d="M 425 180 Q 425 101 425 42" fill="none" stroke="#0055ff" stroke-width="0.7" opacity="0.3"/>
+      
+      <!-- Energy pulse traveling on axon -->
+      <path d="M 425 180 Q 425 131 425 42" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-dasharray="3,130" opacity="0.8" class="pulse-spark" style="animation-delay:0.00s"/>
+    
+        <line x1="425" y1="42" x2="434.3740835063603" y2="13.712784541143261" stroke="#00d4ff" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="434.3740835063603,11.31278454114326 436.2940835063603,13.712784541143261 434.3740835063603,16.11278454114326 432.4540835063603,13.712784541143261" fill="#ffffff" opacity="0.8"/>
+      
+        <line x1="425" y1="42" x2="415.6259164936397" y2="13.712784541143261" stroke="#00d4ff" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="415.6259164936397,11.31278454114326 417.5459164936397,13.712784541143261 415.6259164936397,16.11278454114326 413.7059164936397,13.712784541143261" fill="#ffffff" opacity="0.8"/>
+      
+      <!-- Primary Synaptic Fiber -->
+      <path d="M 425 180 Q 451.9235020232712 111.84684544046 521.2279437837865 83.29339074493784" fill="none" stroke="#3c096c" stroke-width="2.2" opacity="0.35"/>
+      <path d="M 425 180 Q 451.9235020232712 111.84684544046 521.2279437837865 83.29339074493784" fill="none" stroke="#7b2cbf" stroke-width="1.1" opacity="0.75"/>
+      
+      <!-- Secondary branching neural filament -->
+      <path d="M 425 180 Q 483.70920682620425 141.54662033847336 521.2279437837865 83.29339074493784" fill="none" stroke="#3c096c" stroke-width="0.7" opacity="0.3"/>
+      
+      <!-- Energy pulse traveling on axon -->
+      <path d="M 425 180 Q 451.9235020232712 111.84684544046 521.2279437837865 83.29339074493784" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-dasharray="3,130" opacity="0.8" class="pulse-spark" style="animation-delay:0.25s"/>
+    
+        <line x1="521.2279437837865" y1="83.29339074493784" x2="540.7135163752106" y2="60.74671780225417" stroke="#7b2cbf" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="540.7135163752106,58.34671780225417 542.6335163752105,60.74671780225417 540.7135163752106,63.146717802254166 538.7935163752106,60.74671780225417" fill="#ffffff" opacity="0.8"/>
+      
+        <line x1="521.2279437837865" y1="83.29339074493784" x2="523.3924686000547" y2="53.57210489927229" stroke="#7b2cbf" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="523.3924686000547,51.17210489927229 525.3124686000547,53.57210489927229 523.3924686000547,55.97210489927229 521.4724686000548,53.57210489927229" fill="#ffffff" opacity="0.8"/>
+      
+      <!-- Primary Synaptic Fiber -->
+      <path d="M 425 180 Q 559.2823916706125 158.27714376623086 638.1607215303156 98.14747606644708" fill="none" stroke="#1f2d7a" stroke-width="2.2" opacity="0.35"/>
+      <path d="M 425 180 Q 559.2823916706125 158.27714376623086 638.1607215303156 98.14747606644708" fill="none" stroke="#4361ee" stroke-width="1.1" opacity="0.75"/>
+      
+      <!-- Secondary branching neural filament -->
+      <path d="M 425 180 Q 517.7293453124305 129.47203516671988 638.1607215303156 98.14747606644708" fill="none" stroke="#1f2d7a" stroke-width="0.7" opacity="0.3"/>
+      
+      <!-- Energy pulse traveling on axon -->
+      <path d="M 425 180 Q 559.2823916706125 158.27714376623086 638.1607215303156 98.14747606644708" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-dasharray="3,130" opacity="0.8" class="pulse-spark" style="animation-delay:0.50s"/>
+    
+        <line x1="638.1607215303156" y1="98.14747606644708" x2="664.7912814169146" y2="84.77387220936089" stroke="#4361ee" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="664.7912814169146,82.37387220936088 666.7112814169145,84.77387220936089 664.7912814169146,87.1738722093609 662.8712814169146,84.77387220936089" fill="#ffffff" opacity="0.8"/>
+      
+        <line x1="638.1607215303156" y1="98.14747606644708" x2="651.5343253874019" y2="71.51691617984821" stroke="#4361ee" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="651.5343253874019,69.1169161798482 653.4543253874018,71.51691617984821 651.5343253874019,73.91691617984822 649.6143253874019,71.51691617984821" fill="#ffffff" opacity="0.8"/>
+      
+      <!-- Primary Synaptic Fiber -->
+      <path d="M 425 180 Q 518.6198765306751 136.0774274409429 642.2878364693747 128.60006535727285" fill="none" stroke="#5a189a" stroke-width="2.2" opacity="0.35"/>
+      <path d="M 425 180 Q 518.6198765306751 136.0774274409429 642.2878364693747 128.60006535727285" fill="none" stroke="#a370f7" stroke-width="1.1" opacity="0.75"/>
+      
+      <!-- Secondary branching neural filament -->
+      <path d="M 425 180 Q 541.1559390866935 163.4113352974832 642.2878364693747 128.60006535727285" fill="none" stroke="#5a189a" stroke-width="0.7" opacity="0.3"/>
+      
+      <!-- Energy pulse traveling on axon -->
+      <path d="M 425 180 Q 518.6198765306751 136.0774274409429 642.2878364693747 128.60006535727285" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-dasharray="3,130" opacity="0.8" class="pulse-spark" style="animation-delay:0.75s"/>
+    
+        <line x1="642.2878364693747" y1="128.60006535727285" x2="672.0091223150403" y2="126.43554054100466" stroke="#a370f7" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="672.0091223150403,124.03554054100465 673.9291223150402,126.43554054100466 672.0091223150403,128.83554054100466 670.0891223150403,126.43554054100466" fill="#ffffff" opacity="0.8"/>
+      
+        <line x1="642.2878364693747" y1="128.60006535727285" x2="664.8345094120584" y2="109.11449276584881" stroke="#a370f7" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="664.8345094120584,106.7144927658488 666.7545094120584,109.11449276584881 664.8345094120584,111.51449276584881 662.9145094120585,109.11449276584881" fill="#ffffff" opacity="0.8"/>
+      
+      <!-- Primary Synaptic Fiber -->
+      <path d="M 425 180 Q 565.7331183124462 196.87707917464985 722.5888223581361 180" fill="none" stroke="#0077b6" stroke-width="2.2" opacity="0.35"/>
+      <path d="M 425 180 Q 565.7331183124462 196.87707917464985 722.5888223581361 180" fill="none" stroke="#00f0ff" stroke-width="1.1" opacity="0.75"/>
+      
+      <!-- Secondary branching neural filament -->
+      <path d="M 425 180 Q 577.8250576123789 171.56146041267507 722.5888223581361 180" fill="none" stroke="#0077b6" stroke-width="0.7" opacity="0.3"/>
+      
+      <!-- Energy pulse traveling on axon -->
+      <path d="M 425 180 Q 565.7331183124462 196.87707917464985 722.5888223581361 180" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-dasharray="3,130" opacity="0.8" class="pulse-spark" style="animation-delay:1.00s"/>
+    
+        <line x1="722.5888223581361" y1="180" x2="750.8760378169928" y2="189.3740835063603" stroke="#00f0ff" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="750.8760378169928,186.9740835063603 752.7960378169928,189.3740835063603 750.8760378169928,191.7740835063603 748.9560378169929,189.3740835063603" fill="#ffffff" opacity="0.8"/>
+      
+        <line x1="722.5888223581361" y1="180" x2="750.8760378169928" y2="170.6259164936397" stroke="#00f0ff" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="750.8760378169928,168.2259164936397 752.7960378169928,170.6259164936397 750.8760378169928,173.0259164936397 748.9560378169929,170.6259164936397" fill="#ffffff" opacity="0.8"/>
+      
+      <!-- Primary Synaptic Fiber -->
+      <path d="M 425 180 Q 569.7490143198943 189.2340914919437 663.3730945990416 228.85569949824023" fill="none" stroke="#1d3557" stroke-width="2.2" opacity="0.35"/>
+      <path d="M 425 180 Q 569.7490143198943 189.2340914919437 663.3730945990416 228.85569949824023" fill="none" stroke="#5390d9" stroke-width="1.1" opacity="0.75"/>
+      
+      <!-- Secondary branching neural filament -->
+      <path d="M 425 180 Q 531.405313789334 212.02472887770836 663.3730945990416 228.85569949824023" fill="none" stroke="#1d3557" stroke-width="0.7" opacity="0.3"/>
+      
+      <!-- Energy pulse traveling on axon -->
+      <path d="M 425 180 Q 569.7490143198943 189.2340914919437 663.3730945990416 228.85569949824023" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-dasharray="3,130" opacity="0.8" class="pulse-spark" style="animation-delay:1.25s"/>
+    
+        <line x1="663.3730945990416" y1="228.85569949824023" x2="685.9197675417253" y2="248.34127208966427" stroke="#5390d9" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="685.9197675417253,245.94127208966427 687.8397675417252,248.34127208966427 685.9197675417253,250.74127208966428 683.9997675417253,248.34127208966427" fill="#ffffff" opacity="0.8"/>
+      
+        <line x1="663.3730945990416" y1="228.85569949824023" x2="693.0943804447071" y2="231.02022431450843" stroke="#5390d9" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="693.0943804447071,228.62022431450842 695.0143804447071,231.02022431450843 693.0943804447071,233.42022431450843 691.1743804447071,231.02022431450843" fill="#ffffff" opacity="0.8"/>
+      
+      <!-- Primary Synaptic Fiber -->
+      <path d="M 425 180 Q 492.5375640165336 237.26484869003963 610.7875163054382 268.11702905031603" fill="none" stroke="#3c096c" stroke-width="2.2" opacity="0.35"/>
+      <path d="M 425 180 Q 492.5375640165336 237.26484869003963 610.7875163054382 268.11702905031603" fill="none" stroke="#9d4edd" stroke-width="1.1" opacity="0.75"/>
+      
+      <!-- Secondary branching neural filament -->
+      <path d="M 425 180 Q 530.5718552208118 217.45534744271723 610.7875163054382 268.11702905031603" fill="none" stroke="#3c096c" stroke-width="0.7" opacity="0.3"/>
+      
+      <!-- Energy pulse traveling on axon -->
+      <path d="M 425 180 Q 492.5375640165336 237.26484869003963 610.7875163054382 268.11702905031603" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-dasharray="3,130" opacity="0.8" class="pulse-spark" style="animation-delay:1.50s"/>
+    
+        <line x1="610.7875163054382" y1="268.11702905031603" x2="624.1611201625244" y2="294.7475889369149" stroke="#9d4edd" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="624.1611201625244,292.3475889369149 626.0811201625244,294.7475889369149 624.1611201625244,297.1475889369149 622.2411201625245,294.7475889369149" fill="#ffffff" opacity="0.8"/>
+      
+        <line x1="610.7875163054382" y1="268.11702905031603" x2="637.4180761920371" y2="281.49063290740224" stroke="#9d4edd" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="637.4180761920371,279.09063290740227 639.3380761920371,281.49063290740224 637.4180761920371,283.8906329074022 635.4980761920372,281.49063290740224" fill="#ffffff" opacity="0.8"/>
+      
+      <!-- Primary Synaptic Fiber -->
+      <path d="M 425 180 Q 488.896418504691 215.01643342058145 537.6221128641413 271.94203725013364" fill="none" stroke="#023e8a" stroke-width="2.2" opacity="0.35"/>
+      <path d="M 425 180 Q 488.896418504691 215.01643342058145 537.6221128641413 271.94203725013364" fill="none" stroke="#48cae4" stroke-width="1.1" opacity="0.75"/>
+      
+      <!-- Secondary branching neural filament -->
+      <path d="M 425 180 Q 477.5183753957605 231.4483112273095 537.6221128641413 271.94203725013364" fill="none" stroke="#023e8a" stroke-width="0.7" opacity="0.3"/>
+      
+      <!-- Energy pulse traveling on axon -->
+      <path d="M 425 180 Q 488.896418504691 215.01643342058145 537.6221128641413 271.94203725013364" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-dasharray="3,130" opacity="0.8" class="pulse-spark" style="animation-delay:1.75s"/>
+    
+        <line x1="537.6221128641413" y1="271.94203725013364" x2="539.7866376804095" y2="301.66332309579917" stroke="#48cae4" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="539.7866376804095,299.2633230957992 541.7066376804095,301.66332309579917 539.7866376804095,304.06332309579915 537.8666376804096,301.66332309579917" fill="#ffffff" opacity="0.8"/>
+      
+        <line x1="537.6221128641413" y1="271.94203725013364" x2="557.1076854555654" y2="294.4887101928173" stroke="#48cae4" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="557.1076854555654,292.0887101928173 559.0276854555653,294.4887101928173 557.1076854555654,296.88871019281726 555.1876854555654,294.4887101928173" fill="#ffffff" opacity="0.8"/>
+      
+      <!-- Primary Synaptic Fiber -->
+      <path d="M 425 180 Q 440.43994707476736 256.4899818705876 425 316.0128034476954" fill="none" stroke="#0055ff" stroke-width="2.2" opacity="0.35"/>
+      <path d="M 425 180 Q 440.43994707476736 256.4899818705876 425 316.0128034476954" fill="none" stroke="#00d4ff" stroke-width="1.1" opacity="0.75"/>
+      
+      <!-- Secondary branching neural filament -->
+      <path d="M 425 180 Q 417.2800264626163 243.76461165047772 425 316.0128034476954" fill="none" stroke="#0055ff" stroke-width="0.7" opacity="0.3"/>
+      
+      <!-- Energy pulse traveling on axon -->
+      <path d="M 425 180 Q 440.43994707476736 256.4899818705876 425 316.0128034476954" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-dasharray="3,130" opacity="0.8" class="pulse-spark" style="animation-delay:2.00s"/>
+    
+        <line x1="425" y1="316.0128034476954" x2="415.6259164936397" y2="344.3000189065521" stroke="#00d4ff" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="415.6259164936397,341.90001890655213 417.5459164936397,344.3000189065521 415.6259164936397,346.7000189065521 413.7059164936397,344.3000189065521" fill="#ffffff" opacity="0.8"/>
+      
+        <line x1="425" y1="316.0128034476954" x2="434.3740835063603" y2="344.3000189065521" stroke="#00d4ff" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="434.3740835063603,341.90001890655213 436.2940835063603,344.3000189065521 434.3740835063603,346.7000189065521 432.4540835063603,344.3000189065521" fill="#ffffff" opacity="0.8"/>
+      
+      <!-- Primary Synaptic Fiber -->
+      <path d="M 425 180 Q 339.19691816064227 226.1160507388144 308.93345211409905 283.91765382698225" fill="none" stroke="#3c096c" stroke-width="2.2" opacity="0.35"/>
+      <path d="M 425 180 Q 339.19691816064227 226.1160507388144 308.93345211409905 283.91765382698225" fill="none" stroke="#7b2cbf" stroke-width="1.1" opacity="0.75"/>
+      
+      <!-- Secondary branching neural filament -->
+      <path d="M 425 180 Q 380.8516300052531 234.88021500082948 308.93345211409905 283.91765382698225" fill="none" stroke="#3c096c" stroke-width="0.7" opacity="0.3"/>
+      
+      <!-- Energy pulse traveling on axon -->
+      <path d="M 425 180 Q 339.19691816064227 226.1160507388144 308.93345211409905 283.91765382698225" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-dasharray="3,130" opacity="0.8" class="pulse-spark" style="animation-delay:2.25s"/>
+    
+        <line x1="308.93345211409905" y1="283.91765382698225" x2="289.447879522675" y2="306.46432676966594" stroke="#7b2cbf" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="289.447879522675,304.06432676966597 291.367879522675,306.46432676966594 289.447879522675,308.8643267696659 287.527879522675,306.46432676966594" fill="#ffffff" opacity="0.8"/>
+      
+        <line x1="308.93345211409905" y1="283.91765382698225" x2="306.7689272978309" y2="313.6389396726478" stroke="#7b2cbf" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="306.7689272978309,311.2389396726478 308.6889272978309,313.6389396726478 306.7689272978309,316.03893967264776 304.84892729783087,313.6389396726478" fill="#ffffff" opacity="0.8"/>
+      
+      <!-- Primary Synaptic Fiber -->
+      <path d="M 425 180 Q 358.36713114909304 221.03663066857945 250.00792531134252 255.9032033416555" fill="none" stroke="#1f2d7a" stroke-width="2.2" opacity="0.35"/>
+      <path d="M 425 180 Q 358.36713114909304 221.03663066857945 250.00792531134252 255.9032033416555" fill="none" stroke="#4361ee" stroke-width="1.1" opacity="0.75"/>
+      
+      <!-- Secondary branching neural filament -->
+      <path d="M 425 180 Q 327.0723784089604 216.4090871719519 250.00792531134252 255.9032033416555" fill="none" stroke="#1f2d7a" stroke-width="0.7" opacity="0.3"/>
+      
+      <!-- Energy pulse traveling on axon -->
+      <path d="M 425 180 Q 358.36713114909304 221.03663066857945 250.00792531134252 255.9032033416555" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-dasharray="3,130" opacity="0.8" class="pulse-spark" style="animation-delay:2.50s"/>
+    
+        <line x1="250.00792531134252" y1="255.9032033416555" x2="223.37736542474363" y2="269.2768071987417" stroke="#4361ee" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="223.37736542474363,266.87680719874174 225.29736542474362,269.2768071987417 223.37736542474363,271.6768071987417 221.45736542474364,269.2768071987417" fill="#ffffff" opacity="0.8"/>
+      
+        <line x1="250.00792531134252" y1="255.9032033416555" x2="236.63432145425634" y2="282.5337632282544" stroke="#4361ee" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="236.63432145425634,280.1337632282544 238.55432145425632,282.5337632282544 236.63432145425634,284.93376322825435 234.71432145425635,282.5337632282544" fill="#ffffff" opacity="0.8"/>
+      
+      <!-- Primary Synaptic Fiber -->
+      <path d="M 425 180 Q 298.50452080919655 206.0862177683884 171.01773381249 232.70350542569918" fill="none" stroke="#5a189a" stroke-width="2.2" opacity="0.35"/>
+      <path d="M 425 180 Q 298.50452080919655 206.0862177683884 171.01773381249 232.70350542569918" fill="none" stroke="#a370f7" stroke-width="1.1" opacity="0.75"/>
+      
+      <!-- Secondary branching neural filament -->
+      <path d="M 425 180 Q 297.76103995476916 206.48452018508019 171.01773381249 232.70350542569918" fill="none" stroke="#5a189a" stroke-width="0.7" opacity="0.3"/>
+      
+      <!-- Energy pulse traveling on axon -->
+      <path d="M 425 180 Q 298.50452080919655 206.0862177683884 171.01773381249 232.70350542569918" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-dasharray="3,130" opacity="0.8" class="pulse-spark" style="animation-delay:2.75s"/>
+    
+        <line x1="171.01773381249" y1="232.70350542569918" x2="141.29644796682447" y2="234.8680302419674" stroke="#a370f7" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="141.29644796682447,232.4680302419674 143.21644796682446,234.8680302419674 141.29644796682447,237.2680302419674 139.3764479668245,234.8680302419674" fill="#ffffff" opacity="0.8"/>
+      
+        <line x1="171.01773381249" y1="232.70350542569918" x2="148.47106086980634" y2="252.18907801712325" stroke="#a370f7" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="148.47106086980634,249.78907801712324 150.39106086980632,252.18907801712325 148.47106086980634,254.58907801712326 146.55106086980635,252.18907801712325" fill="#ffffff" opacity="0.8"/>
+      
+      <!-- Primary Synaptic Fiber -->
+      <path d="M 425 180 Q 261.3897866432188 177.44072620745192 140.801834320563 180" fill="none" stroke="#0077b6" stroke-width="2.2" opacity="0.35"/>
+      <path d="M 425 180 Q 261.3897866432188 177.44072620745192 140.801834320563 180" fill="none" stroke="#00f0ff" stroke-width="1.1" opacity="0.75"/>
+      
+      <!-- Secondary branching neural filament -->
+      <path d="M 425 180 Q 293.65648241881286 181.27963689627404 140.801834320563 180" fill="none" stroke="#0077b6" stroke-width="0.7" opacity="0.3"/>
+      
+      <!-- Energy pulse traveling on axon -->
+      <path d="M 425 180 Q 261.3897866432188 177.44072620745192 140.801834320563 180" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-dasharray="3,130" opacity="0.8" class="pulse-spark" style="animation-delay:3.00s"/>
+    
+        <line x1="140.801834320563" y1="180" x2="115.66669671875273" y2="171.67048169990682" stroke="#00f0ff" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="115.66669671875273,169.2704816999068 117.58669671875273,171.67048169990682 115.66669671875273,174.07048169990682 113.74669671875273,171.67048169990682" fill="#ffffff" opacity="0.8"/>
+      
+        <line x1="140.801834320563" y1="180" x2="115.66669671875275" y2="188.32951830009318" stroke="#00f0ff" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="115.66669671875275,185.92951830009318 117.58669671875275,188.32951830009318 115.66669671875275,190.7295183000932 113.74669671875274,188.32951830009318" fill="#ffffff" opacity="0.8"/>
+      
+      <!-- Primary Synaptic Fiber -->
+      <path d="M 425 180 Q 341.29409472879587 162.54466388571075 202.33704430332455 134.42361047702397" fill="none" stroke="#1d3557" stroke-width="2.2" opacity="0.35"/>
+      <path d="M 425 180 Q 341.29409472879587 162.54466388571075 202.33704430332455 134.42361047702397" fill="none" stroke="#5390d9" stroke-width="1.1" opacity="0.75"/>
+      
+      <!-- Secondary branching neural filament -->
+      <path d="M 425 180 Q 299.8557358630955 154.54537591491263 202.33704430332455 134.42361047702397" fill="none" stroke="#1d3557" stroke-width="0.7" opacity="0.3"/>
+      
+      <!-- Energy pulse traveling on axon -->
+      <path d="M 425 180 Q 341.29409472879587 162.54466388571075 202.33704430332455 134.42361047702397" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-dasharray="3,130" opacity="0.8" class="pulse-spark" style="animation-delay:3.25s"/>
+    
+        <line x1="202.33704430332455" y1="134.42361047702397" x2="184.03630684446733" y2="118.60751427792283" stroke="#5390d9" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="184.03630684446733,116.20751427792283 185.95630684446732,118.60751427792283 184.03630684446733,121.00751427792284 182.11630684446735,118.60751427792283" fill="#ffffff" opacity="0.8"/>
+      
+        <line x1="202.33704430332455" y1="134.42361047702397" x2="178.21279987116876" y2="132.66670379343455" stroke="#5390d9" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="178.21279987116876,130.26670379343454 180.13279987116874,132.66670379343455 178.21279987116876,135.06670379343456 176.29279987116877,132.66670379343455" fill="#ffffff" opacity="0.8"/>
+      
+      <!-- Primary Synaptic Fiber -->
+      <path d="M 425 180 Q 302.57093018132025 125.27437450275686 209.34871647950754 86.54816160504775" fill="none" stroke="#3c096c" stroke-width="2.2" opacity="0.35"/>
+      <path d="M 425 180 Q 302.57093018132025 125.27437450275686 209.34871647950754 86.54816160504775" fill="none" stroke="#9d4edd" stroke-width="1.1" opacity="0.75"/>
+      
+      <!-- Secondary branching neural filament -->
+      <path d="M 425 180 Q 324.47607226897054 137.2739339524074 209.34871647950754 86.54816160504775" fill="none" stroke="#3c096c" stroke-width="0.7" opacity="0.3"/>
+      
+      <!-- Energy pulse traveling on axon -->
+      <path d="M 425 180 Q 302.57093018132025 125.27437450275686 209.34871647950754 86.54816160504775" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-dasharray="3,130" opacity="0.8" class="pulse-spark" style="animation-delay:3.50s"/>
+    
+        <line x1="209.34871647950754" y1="86.54816160504775" x2="195.97511262242136" y2="59.91760171844887" stroke="#9d4edd" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="195.97511262242136,57.51760171844887 197.89511262242135,59.91760171844887 195.97511262242136,62.31760171844887 194.05511262242138,59.91760171844887" fill="#ffffff" opacity="0.8"/>
+      
+        <line x1="209.34871647950754" y1="86.54816160504775" x2="182.71815659290866" y2="73.17455774796156" stroke="#9d4edd" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="182.71815659290866,70.77455774796155 184.63815659290864,73.17455774796156 182.71815659290866,75.57455774796156 180.79815659290867,73.17455774796156" fill="#ffffff" opacity="0.8"/>
+      
+      <!-- Primary Synaptic Fiber -->
+      <path d="M 425 180 Q 370.60769349583546 145.2210638171862 333.284781773395 89.4292480816632" fill="none" stroke="#023e8a" stroke-width="2.2" opacity="0.35"/>
+      <path d="M 425 180 Q 370.60769349583546 145.2210638171862 333.284781773395 89.4292480816632" fill="none" stroke="#48cae4" stroke-width="1.1" opacity="0.75"/>
+      
+      <!-- Secondary branching neural filament -->
+      <path d="M 425 180 Q 383.40973958212857 129.46140415265432 333.284781773395 89.4292480816632" fill="none" stroke="#023e8a" stroke-width="0.7" opacity="0.3"/>
+      
+      <!-- Energy pulse traveling on axon -->
+      <path d="M 425 180 Q 370.60769349583546 145.2210638171862 333.284781773395 89.4292480816632" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-dasharray="3,130" opacity="0.8" class="pulse-spark" style="animation-delay:3.75s"/>
+    
+        <line x1="333.284781773395" y1="89.4292480816632" x2="331.1202569571268" y2="59.707962235997655" stroke="#48cae4" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="331.1202569571268,57.30796223599766 333.0402569571268,59.707962235997655 331.1202569571268,62.107962235997654 329.2002569571268,59.707962235997655" fill="#ffffff" opacity="0.8"/>
+      
+        <line x1="333.284781773395" y1="89.4292480816632" x2="313.799209181971" y2="66.88257513897955" stroke="#48cae4" stroke-width="0.8" opacity="0.45"/>
+        <polygon points="313.799209181971,64.48257513897954 315.719209181971,66.88257513897955 313.799209181971,69.28257513897955 311.87920918197096,66.88257513897955" fill="#ffffff" opacity="0.8"/>
+      
+
+  <!-- Central Diamond Core -->
+  <polygon points="425,156 446.6,180 425,204 403.4,180" fill="#4cc9f0" opacity="0.25" filter="url(#glow)"/>
+  <polygon points="425,168 435.8,180 425,192 414.2,180" fill="#00f0ff" stroke="#ffffff" stroke-width="1.8"/>
+  <polygon points="425,174 430.4,180 425,186 419.6,180" fill="#ffffff" opacity="0.95"/>
+
+  <!-- Dynamic User Identity -->
+  <text x="425" y="210" text-anchor="middle" fill="#4cc9f0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="11.5" font-weight="700" letter-spacing="2">vishu2717</text>
+
+  <!-- Diamond Repository Nodes -->
+  
+      <g class="neural-diamond">
+        <!-- Glow halo -->
+        <polygon points="425,25.8 439.58,42 425,58.2 410.42,42" fill="#00d4ff" opacity="0.18" filter="url(#glow)"/>
+        <!-- Main Diamond -->
+        <polygon points="425,33 433.1,42 425,51 416.9,42" fill="#00d4ff" stroke="#ffffff" stroke-width="1.2"/>
+        <!-- Inner Facet Highlight -->
+        <polygon points="425,37.95 428.645,42 425,46.05 421.355,42" fill="#ffffff" opacity="0.8"/>
+        <!-- Label -->
+        <text x="441" y="45" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="10.5" font-weight="600" text-anchor="start" opacity="0.95">vishu2717</text>
+      </g>
+    
+      <g class="neural-diamond">
+        <!-- Glow halo -->
+        <polygon points="521.2279437837865,67.09339074493784 535.8079437837865,83.29339074493784 521.2279437837865,99.49339074493784 506.6479437837865,83.29339074493784" fill="#7b2cbf" opacity="0.18" filter="url(#glow)"/>
+        <!-- Main Diamond -->
+        <polygon points="521.2279437837865,74.29339074493784 529.3279437837865,83.29339074493784 521.2279437837865,92.29339074493784 513.1279437837865,83.29339074493784" fill="#7b2cbf" stroke="#ffffff" stroke-width="1.2"/>
+        <!-- Inner Facet Highlight -->
+        <polygon points="521.2279437837865,79.24339074493784 524.8729437837865,83.29339074493784 521.2279437837865,87.34339074493784 517.5829437837865,83.29339074493784" fill="#ffffff" opacity="0.8"/>
+        <!-- Label -->
+        <text x="537.2279437837865" y="86.29339074493784" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="10.5" font-weight="600" text-anchor="start" opacity="0.95">habitflow</text>
+      </g>
+    
+      <g class="neural-diamond">
+        <!-- Glow halo -->
+        <polygon points="638.1607215303156,81.94747606644708 652.7407215303157,98.14747606644708 638.1607215303156,114.34747606644709 623.5807215303156,98.14747606644708" fill="#4361ee" opacity="0.18" filter="url(#glow)"/>
+        <!-- Main Diamond -->
+        <polygon points="638.1607215303156,89.14747606644708 646.2607215303157,98.14747606644708 638.1607215303156,107.14747606644708 630.0607215303156,98.14747606644708" fill="#4361ee" stroke="#ffffff" stroke-width="1.2"/>
+        <!-- Inner Facet Highlight -->
+        <polygon points="638.1607215303156,94.09747606644709 641.8057215303156,98.14747606644708 638.1607215303156,102.19747606644708 634.5157215303157,98.14747606644708" fill="#ffffff" opacity="0.8"/>
+        <!-- Label -->
+        <text x="654.1607215303156" y="101.14747606644708" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="10.5" font-weight="600" text-anchor="start" opacity="0.95">WireFM</text>
+      </g>
+    
+      <g class="neural-diamond">
+        <!-- Glow halo -->
+        <polygon points="642.2878364693747,112.40006535727285 656.8678364693748,128.60006535727285 642.2878364693747,144.80006535727284 627.7078364693747,128.60006535727285" fill="#a370f7" opacity="0.18" filter="url(#glow)"/>
+        <!-- Main Diamond -->
+        <polygon points="642.2878364693747,119.60006535727285 650.3878364693747,128.60006535727285 642.2878364693747,137.60006535727285 634.1878364693747,128.60006535727285" fill="#a370f7" stroke="#ffffff" stroke-width="1.2"/>
+        <!-- Inner Facet Highlight -->
+        <polygon points="642.2878364693747,124.55006535727286 645.9328364693747,128.60006535727285 642.2878364693747,132.65006535727287 638.6428364693747,128.60006535727285" fill="#ffffff" opacity="0.8"/>
+        <!-- Label -->
+        <text x="658.2878364693747" y="131.60006535727285" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="10.5" font-weight="600" text-anchor="start" opacity="0.95">ErenYeager0..</text>
+      </g>
+    
+      <g class="neural-diamond">
+        <!-- Glow halo -->
+        <polygon points="722.5888223581361,163.8 737.1688223581361,180 722.5888223581361,196.2 708.0088223581361,180" fill="#00f0ff" opacity="0.18" filter="url(#glow)"/>
+        <!-- Main Diamond -->
+        <polygon points="722.5888223581361,171 730.6888223581361,180 722.5888223581361,189 714.4888223581361,180" fill="#00f0ff" stroke="#ffffff" stroke-width="1.2"/>
+        <!-- Inner Facet Highlight -->
+        <polygon points="722.5888223581361,175.95 726.2338223581361,180 722.5888223581361,184.05 718.9438223581361,180" fill="#ffffff" opacity="0.8"/>
+        <!-- Label -->
+        <text x="738.5888223581361" y="183" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="10.5" font-weight="600" text-anchor="start" opacity="0.95">autopin</text>
+      </g>
+    
+      <g class="neural-diamond">
+        <!-- Glow halo -->
+        <polygon points="663.3730945990416,212.65569949824024 677.9530945990416,228.85569949824023 663.3730945990416,245.05569949824022 648.7930945990415,228.85569949824023" fill="#5390d9" opacity="0.18" filter="url(#glow)"/>
+        <!-- Main Diamond -->
+        <polygon points="663.3730945990416,219.85569949824023 671.4730945990416,228.85569949824023 663.3730945990416,237.85569949824023 655.2730945990415,228.85569949824023" fill="#5390d9" stroke="#ffffff" stroke-width="1.2"/>
+        <!-- Inner Facet Highlight -->
+        <polygon points="663.3730945990416,224.80569949824022 667.0180945990415,228.85569949824023 663.3730945990416,232.90569949824024 659.7280945990416,228.85569949824023" fill="#ffffff" opacity="0.8"/>
+        <!-- Label -->
+        <text x="679.3730945990416" y="231.85569949824023" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="10.5" font-weight="600" text-anchor="start" opacity="0.95">ani-cli</text>
+      </g>
+    
+      <g class="neural-diamond">
+        <!-- Glow halo -->
+        <polygon points="610.7875163054382,251.91702905031605 625.3675163054382,268.11702905031603 610.7875163054382,284.317029050316 596.2075163054382,268.11702905031603" fill="#9d4edd" opacity="0.18" filter="url(#glow)"/>
+        <!-- Main Diamond -->
+        <polygon points="610.7875163054382,259.11702905031603 618.8875163054382,268.11702905031603 610.7875163054382,277.11702905031603 602.6875163054382,268.11702905031603" fill="#9d4edd" stroke="#ffffff" stroke-width="1.2"/>
+        <!-- Inner Facet Highlight -->
+        <polygon points="610.7875163054382,264.067029050316 614.4325163054382,268.11702905031603 610.7875163054382,272.16702905031605 607.1425163054382,268.11702905031603" fill="#ffffff" opacity="0.8"/>
+        <!-- Label -->
+        <text x="626.7875163054382" y="271.11702905031603" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="10.5" font-weight="600" text-anchor="start" opacity="0.95">supertonic-..</text>
+      </g>
+    
+      <g class="neural-diamond">
+        <!-- Glow halo -->
+        <polygon points="537.6221128641413,255.74203725013365 552.2021128641413,271.94203725013364 537.6221128641413,288.1420372501336 523.0421128641412,271.94203725013364" fill="#48cae4" opacity="0.18" filter="url(#glow)"/>
+        <!-- Main Diamond -->
+        <polygon points="537.6221128641413,262.94203725013364 545.7221128641413,271.94203725013364 537.6221128641413,280.94203725013364 529.5221128641413,271.94203725013364" fill="#48cae4" stroke="#ffffff" stroke-width="1.2"/>
+        <!-- Inner Facet Highlight -->
+        <polygon points="537.6221128641413,267.8920372501336 541.2671128641413,271.94203725013364 537.6221128641413,275.99203725013365 533.9771128641413,271.94203725013364" fill="#ffffff" opacity="0.8"/>
+        <!-- Label -->
+        <text x="553.6221128641413" y="274.94203725013364" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="10.5" font-weight="600" text-anchor="start" opacity="0.95">arch-enviro..</text>
+      </g>
+    
+      <g class="neural-diamond">
+        <!-- Glow halo -->
+        <polygon points="425,299.8128034476954 439.58,316.0128034476954 425,332.21280344769536 410.42,316.0128034476954" fill="#00d4ff" opacity="0.18" filter="url(#glow)"/>
+        <!-- Main Diamond -->
+        <polygon points="425,307.0128034476954 433.1,316.0128034476954 425,325.0128034476954 416.9,316.0128034476954" fill="#00d4ff" stroke="#ffffff" stroke-width="1.2"/>
+        <!-- Inner Facet Highlight -->
+        <polygon points="425,311.96280344769536 428.645,316.0128034476954 425,320.0628034476954 421.355,316.0128034476954" fill="#ffffff" opacity="0.8"/>
+        <!-- Label -->
+        <text x="441" y="319.0128034476954" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="10.5" font-weight="600" text-anchor="start" opacity="0.95">car-service</text>
+      </g>
+    
+      <g class="neural-diamond">
+        <!-- Glow halo -->
+        <polygon points="308.93345211409905,267.71765382698226 323.51345211409904,283.91765382698225 308.93345211409905,300.11765382698223 294.35345211409907,283.91765382698225" fill="#7b2cbf" opacity="0.18" filter="url(#glow)"/>
+        <!-- Main Diamond -->
+        <polygon points="308.93345211409905,274.91765382698225 317.0334521140991,283.91765382698225 308.93345211409905,292.91765382698225 300.83345211409903,283.91765382698225" fill="#7b2cbf" stroke="#ffffff" stroke-width="1.2"/>
+        <!-- Inner Facet Highlight -->
+        <polygon points="308.93345211409905,279.86765382698223 312.57845211409904,283.91765382698225 308.93345211409905,287.96765382698226 305.2884521140991,283.91765382698225" fill="#ffffff" opacity="0.8"/>
+        <!-- Label -->
+        <text x="292.93345211409905" y="286.91765382698225" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="10.5" font-weight="600" text-anchor="end" opacity="0.95">gitpost</text>
+      </g>
+    
+      <g class="neural-diamond">
+        <!-- Glow halo -->
+        <polygon points="250.00792531134252,239.70320334165552 264.58792531134253,255.9032033416555 250.00792531134252,272.1032033416555 235.4279253113425,255.9032033416555" fill="#4361ee" opacity="0.18" filter="url(#glow)"/>
+        <!-- Main Diamond -->
+        <polygon points="250.00792531134252,246.9032033416555 258.1079253113425,255.9032033416555 250.00792531134252,264.9032033416555 241.90792531134252,255.9032033416555" fill="#4361ee" stroke="#ffffff" stroke-width="1.2"/>
+        <!-- Inner Facet Highlight -->
+        <polygon points="250.00792531134252,251.8532033416555 253.65292531134253,255.9032033416555 250.00792531134252,259.9532033416555 246.3629253113425,255.9032033416555" fill="#ffffff" opacity="0.8"/>
+        <!-- Label -->
+        <text x="234.00792531134252" y="258.9032033416555" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="10.5" font-weight="600" text-anchor="end" opacity="0.95">pptx</text>
+      </g>
+    
+      <g class="neural-diamond">
+        <!-- Glow halo -->
+        <polygon points="171.01773381249,216.5035054256992 185.59773381249002,232.70350542569918 171.01773381249,248.90350542569917 156.43773381249,232.70350542569918" fill="#a370f7" opacity="0.18" filter="url(#glow)"/>
+        <!-- Main Diamond -->
+        <polygon points="171.01773381249,223.70350542569918 179.11773381249,232.70350542569918 171.01773381249,241.70350542569918 162.91773381249,232.70350542569918" fill="#a370f7" stroke="#ffffff" stroke-width="1.2"/>
+        <!-- Inner Facet Highlight -->
+        <polygon points="171.01773381249,228.65350542569917 174.66273381249002,232.70350542569918 171.01773381249,236.7535054256992 167.37273381249,232.70350542569918" fill="#ffffff" opacity="0.8"/>
+        <!-- Label -->
+        <text x="155.01773381249" y="235.70350542569918" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="10.5" font-weight="600" text-anchor="end" opacity="0.95">next</text>
+      </g>
+    
+      <g class="neural-diamond">
+        <!-- Glow halo -->
+        <polygon points="140.801834320563,166.51689482187544 152.9366289808751,180 140.801834320563,193.48310517812456 128.66703966025088,180" fill="#00f0ff" opacity="0.18" filter="url(#glow)"/>
+        <!-- Main Diamond -->
+        <polygon points="140.801834320563,172.50938601215302 147.54338690962527,180 140.801834320563,187.49061398784698 134.0602817315007,180" fill="#00f0ff" stroke="#ffffff" stroke-width="1.2"/>
+        <!-- Inner Facet Highlight -->
+        <polygon points="140.801834320563,176.62922370546886 143.835532985641,180 140.801834320563,183.37077629453114 137.76813565548497,180" fill="#ffffff" opacity="0.8"/>
+        <!-- Label -->
+        <text x="126.311220332716" y="183" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="10.5" font-weight="600" text-anchor="end" opacity="0.95">studyAI</text>
+      </g>
+    
+      <g class="neural-diamond">
+        <!-- Glow halo -->
+        <polygon points="202.33704430332455,122.81513611992287 212.78467122471554,134.42361047702397 202.33704430332455,146.03208483412507 191.88941738193355,134.42361047702397" fill="#5390d9" opacity="0.18" filter="url(#glow)"/>
+        <!-- Main Diamond -->
+        <polygon points="202.33704430332455,127.97445805641225 208.1412814818751,134.42361047702397 202.33704430332455,140.8727628976357 196.532807124774,134.42361047702397" fill="#5390d9" stroke="#ffffff" stroke-width="1.2"/>
+        <!-- Inner Facet Highlight -->
+        <polygon points="202.33704430332455,131.52149188774868 204.9489510336723,134.42361047702397 202.33704430332455,137.32572906629926 199.7251375729768,134.42361047702397" fill="#ffffff" opacity="0.8"/>
+        <!-- Label -->
+        <text x="188.8878918827128" y="137.42361047702397" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="10.5" font-weight="600" text-anchor="end" opacity="0.95">Anispacex</text>
+      </g>
+    
+      <g class="neural-diamond">
+        <!-- Glow halo -->
+        <polygon points="209.34871647950754,70.34816160504775 223.92871647950756,86.54816160504775 209.34871647950754,102.74816160504776 194.76871647950753,86.54816160504775" fill="#9d4edd" opacity="0.18" filter="url(#glow)"/>
+        <!-- Main Diamond -->
+        <polygon points="209.34871647950754,77.54816160504775 217.44871647950754,86.54816160504775 209.34871647950754,95.54816160504775 201.24871647950755,86.54816160504775" fill="#9d4edd" stroke="#ffffff" stroke-width="1.2"/>
+        <!-- Inner Facet Highlight -->
+        <polygon points="209.34871647950754,82.49816160504776 212.99371647950755,86.54816160504775 209.34871647950754,90.59816160504775 205.70371647950753,86.54816160504775" fill="#ffffff" opacity="0.8"/>
+        <!-- Label -->
+        <text x="193.34871647950754" y="89.54816160504775" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="10.5" font-weight="600" text-anchor="end" opacity="0.95">api</text>
+      </g>
+    
+      <g class="neural-diamond">
+        <!-- Glow halo -->
+        <polygon points="333.284781773395,73.2292480816632 347.864781773395,89.4292480816632 333.284781773395,105.6292480816632 318.70478177339504,89.4292480816632" fill="#48cae4" opacity="0.18" filter="url(#glow)"/>
+        <!-- Main Diamond -->
+        <polygon points="333.284781773395,80.4292480816632 341.38478177339505,89.4292480816632 333.284781773395,98.4292480816632 325.184781773395,89.4292480816632" fill="#48cae4" stroke="#ffffff" stroke-width="1.2"/>
+        <!-- Inner Facet Highlight -->
+        <polygon points="333.284781773395,85.3792480816632 336.929781773395,89.4292480816632 333.284781773395,93.4792480816632 329.63978177339504,89.4292480816632" fill="#ffffff" opacity="0.8"/>
+        <!-- Label -->
+        <text x="317.284781773395" y="92.4292480816632" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="10.5" font-weight="600" text-anchor="end" opacity="0.95">ppt</text>
+      </g>
+    
+</svg>
