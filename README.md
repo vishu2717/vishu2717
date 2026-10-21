@@ -55,73 +55,34 @@
 
 --- -->
 
-<h2 align="center"> Languages · Technologies · Tools </h2>
+<h2 align="center">✦ Arsenal · Technologies · Tools ✦</h2>
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=16&duration=3000&pause=1000&color=F38BA8&center=true&vCenter=true&width=460&lines=Low-Level+Systems+%26+Reverse+Engineering;DevOps+Automation+%26+Pipelines;Minimalist+Arch+Linux+Hyprland+Ricing" alt="Typing SVG" />
+</p>
+
+<div align="center">
+
+### ⚡ Core &amp; Systems
+<a href="#">
+  <img src="https://skillicons.dev/icons?i=rust,c,cpp,go,py,ts&theme=dark" alt="Languages" />
+</a>
+
 <br/>
 
-<table align="center">
-  <tr>
-    <td align="center" width="96">
-      <img src="https://skillicons.dev/icons?i=qt" width="40" height="40" alt="Qt / QML" />
-    </td>
-    <td align="center" width="96">
-      <img src="https://skillicons.dev/icons?i=py" width="40" height="40" alt="Python" />
-    </td>
-    <td align="center" width="96">
-      <img src="https://skillicons.dev/icons?i=c" width="40" height="40" alt="C" />
-    </td>
-    <td align="center" width="96">
-      <img src="https://skillicons.dev/icons?i=cpp" width="40" height="40" alt="C++" />
-    </td>
-    <td align="center" width="96">
-      <img src="https://skillicons.dev/icons?i=go" width="40" height="40" alt="Go" />
-    </td>
-    <td align="center" width="96">
-      <img src="https://skillicons.dev/icons?i=rust" width="40" height="40" alt="Rust" />
-    </td>
-  </tr>
+### 🛡️ DevOps · Infrastructure · Backend
+<a href="#">
+  <img src="https://skillicons.dev/icons?i=docker,githubactions,linux,postgres,redis,fastapi&theme=dark" alt="DevOps & Backend" />
+</a>
 
-  <tr>
-    <td align="center" width="96">
-      <img src="https://skillicons.dev/icons?i=kotlin" width="40" height="40" alt="Kotlin" />
-    </td>
-    <td align="center" width="96">
-      <img src="https://cdn.simpleicons.org/kaggle/20BEFF" width="40" height="40" alt="Kaggle" />
-    </td>
-    <td align="center" width="96">
-      <img src="https://cdn.simpleicons.org/googlecolab/F9AB00" width="40" height="40" alt="Google Colab" />
-    </td>
-    <td align="center" width="96">
-      <img src="https://cdn.simpleicons.org/fishshell" width="40" height="40" alt="Fish Shell" />
-    </td>
-    <td align="center" width="96">
-      <img src="https://skillicons.dev/icons?i=bash" width="40" height="40" alt="Terminal / Shell" />
-    </td>
-    <td align="center" width="96">
-      <img src="https://skillicons.dev/icons?i=sqlite" width="40" height="40" alt="SQLite" />
-    </td>
-  </tr>
+<br/>
 
-  <tr>
-    <td align="center" width="96">
-      <img src="https://skillicons.dev/icons?i=neovim" width="40" height="40" alt="Neovim" />
-    </td>
-    <td align="center" width="96">
-      <img src="https://skillicons.dev/icons?i=arch" width="40" height="40" alt="Arch Linux" />
-    </td>
-    <td align="center" width="96">
-      <img src="https://cdn.simpleicons.org/hyprland/00C8FF" width="40" height="40" alt="Hyprland" />
-    </td>
-    <td align="center" width="96">
-      <img src="https://skillicons.dev/icons?i=git" width="40" height="40" alt="Git" />
-    </td>
-    <td align="center" width="96">
-      <img src="https://skillicons.dev/icons?i=docker" width="40" height="40" alt="Docker" />
-    </td>
-    <td align="center" width="96">
-      <img src="https://skillicons.dev/icons?i=discord" width="40" height="40" alt="Discord" />
-    </td>
-  </tr>
-</table>
+### 🌸 Rice · Environment · Tooling
+<a href="#">
+  <img src="https://skillicons.dev/icons?i=arch,neovim,git,bash,regex,discord&theme=dark" alt="Rice & Tools" />
+</a>
+
+</div>
 
 <br/>
 
