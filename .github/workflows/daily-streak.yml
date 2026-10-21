@@ -1,0 +1,31 @@
+name: Daily Activity Sync
+
+on:
+  schedule:
+    # Runs everyday at 00:05 UTC (05:35 AM IST)
+    - cron: "5 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  daily-sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Update activity timestamp
+        run: |
+          mkdir -p .github/activity
+          echo "Last synchronized on: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" > .github/activity/sync.log
+
+      - name: Commit and push daily activity
+        run: |
+          git config user.name "jasmin1727"
+          git config user.email "thakorjasmin503@gmail.com"
+          git add .github/activity/sync.log
+          git commit -m "Auto sync daily activity [$(date -u '+%Y-%m-%d')]" || exit 0
+          git pull --rebase origin main
+          git push
