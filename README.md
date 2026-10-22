@@ -3,16 +3,12 @@
 </p> 
 
 <p align="center">  
-  <img src=".github/assets/metrics-stats.svg?raw=true&v=3" width="49%" />
-  <img src=".github/assets/metrics-repository.svg?raw=true&v=3" width="49%" />
+  <img src=".github/assets/metrics-stats.svg?raw=true&v=2" width="49%" />
+  <img src=".github/assets/metrics-repository.svg?raw=true&v=2" width="49%" />
 </p>
 
 <p align="center">
-  <img src=".github/assets/metrics-activity.svg?raw=true&v=3" width="98%" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=vishu2717&theme=tokyonight&hide_border=true&background=0d1117&stroke=F38BA8&ring=F38BA8&fire=F38BA8&currStreakLabel=F38BA8" width="98%" alt="GitHub Streak" />
+  <img src=".github/assets/metrics-activity.svg?raw=true&v=2" width="98%" />
 </p>
 
 ---
