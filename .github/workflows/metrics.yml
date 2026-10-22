@@ -16,15 +16,9 @@ jobs:
         - name: Stats
           uses: lowlighter/metrics@latest
           with:
-            # Your GitHub token
-            # The following scopes are required:
-            #  - public_access (default scope)
-            #  - public_repo
-            # The following additional scopes may be required:
-            #  - read:org  (for organization related metrics)
-            #  - read:user (for user related data)
-            #  - repo      (optional, if you want to include private repositories)
+            user: vishu2717
             token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+            committer_token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
             filename: .github/assets/metrics-stats.svg
             base: header, activity, community, repositories
             repositories_affiliations: owner
@@ -33,7 +27,9 @@ jobs:
         - name: Activity Calendar
           uses: lowlighter/metrics@latest
           with:
+            user: vishu2717
             token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+            committer_token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
             filename: .github/assets/metrics-activity.svg
             base: ""
             plugin_isocalendar: yes
