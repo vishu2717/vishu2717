@@ -26,6 +26,6 @@ jobs:
           git config user.name "vishu2717"
           git config user.email "156205974+vishu2717@users.noreply.github.com"
           git add .github/activity/sync.log
-          git commit -m "Auto sync daily activity [$(date -u '+%Y-%m-%d')]" || exit 0
+          git commit -m "Auto sync daily activity [$(date -u '+%Y-%m-%d')] [skip ci]" || exit 0
           git pull --rebase origin main
           git push
