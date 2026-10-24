@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img src=".github/assets/metrics-activity.svg?raw=true&v=4" width="98%" />
+  <img src=".github/assets/metrics-activity.svg?raw=true&v=5" width="98%" />
 </p>
 
 ---

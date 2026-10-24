@@ -16,16 +16,27 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
       - name: Update activity timestamp
         run: |
           mkdir -p .github/activity
           echo "Last synchronized on: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" > .github/activity/sync.log
 
+      - name: Update 3D Activity Calendar with Today's Live Data
+        env:
+          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          python3 .github/scripts/update_calendar.py
+
       - name: Commit and push daily activity
         run: |
           git config user.name "vishu2717"
           git config user.email "156205974+vishu2717@users.noreply.github.com"
-          git add .github/activity/sync.log
+          git add .github/activity/sync.log .github/assets/metrics-activity.svg
           git commit -m "Auto sync daily activity [$(date -u '+%Y-%m-%d')]" || exit 0
           git pull --rebase origin main
           git push
