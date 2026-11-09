@@ -123,9 +123,10 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="362.6925425438713" height="8" fill="#89e051"/>
-                    <rect mask="url(#languages-bar)" x="362.6925425438713" y="0" width="65.7387102769002" height="8" fill="#ecdebe"/>
-                    <rect mask="url(#languages-bar)" x="428.4312528207715" y="0" width="31.568747179228502" height="8" fill="#384d54"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="208.31426671421275" height="8" fill="#89e051"/>
+                    <rect mask="url(#languages-bar)" x="208.31426671421275" y="0" width="192.1458379514066" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="400.4601046656194" y="0" width="35.67517034666872" height="8" fill="#384d54"/>
+                    <rect mask="url(#languages-bar)" x="436.1352750122881" y="0" width="23.86472498771191" height="8" fill="#ecdebe"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -137,7 +138,7 @@
                                 Shell
                             </div>
                             <small>
-                                <div>78.85%</div>
+                                <div>45.29%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -148,11 +149,22 @@
                                 Dockerfile
                             </div>
                             <small>
-                                <div>6.86%</div>
+                                <div>7.76%</div>
                             </small>
                         </div>
                     </section>
                     <section>
+                        <div class="field language details">
+                            <div class="field">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                    <path fill="#3572A5" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                </svg>
+                                Python
+                            </div>
+                            <small>
+                                <div>41.77%</div>
+                            </small>
+                        </div>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -161,7 +173,7 @@
                                 Roff
                             </div>
                             <small>
-                                <div>14.29%</div>
+                                <div>5.19%</div>
                             </small>
                         </div>
                     </section>
