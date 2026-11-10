@@ -3,12 +3,12 @@
 </p> 
 
 <p align="center">  
-  <img src=".github/assets/metrics-stats.svg?raw=true&v=2" width="49%" />
+  <img src=".github/assets/metrics-stats.svg?raw=true&v=7" width="49%" />
   <img src=".github/assets/metrics-repository.svg?raw=true&v=2" width="49%" />
 </p>
 
 <p align="center">
-  <img src=".github/assets/metrics-activity.svg?raw=true&v=5" width="98%" />
+  <img src=".github/assets/metrics-activity.svg?raw=true&v=7" width="98%" />
 </p>
 
 ---
