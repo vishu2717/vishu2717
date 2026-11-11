@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Vishal&#39;s GitHub Stats, Rank: C+</title>
-        <desc id="descId">Total Stars Earned: 0, Total Commits  : 9079, Total PRs: 7, Total Issues: 0, Contributed to (last year): 2</desc>
+        <desc id="descId">Total Stars Earned: 0, Total Commits  : 9085, Total PRs: 7, Total Issues: 0, Contributed to (last year): 2</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 201.80222467445878;
+        stroke-dashoffset: 201.80190322609974;
       }
     }
   
